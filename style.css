@@ -1,0 +1,75 @@
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-color: #dc3545;
+}
+.jumbotron .display-4 {
+    margin-top: 35px;
+}
+
+/* text */
+.judul {
+    z-index: 1;
+    font-family: Viga;
+    color: white;
+}
+.deskripsi {
+    z-index: 1;
+    margin-left: 10px;
+    color: rgb(231, 221, 221);
+}
+
+.info-panel {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin-top: -69px;
+    background-color: white;
+
+}
+.info-panel img {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+}
+.info-panel h4 {
+    margin-top: 10px;
+}
+.info-panel p {
+    margin-top: -10px;
+    padding: 5px;
+}
+.info-panel .semua {
+    margin-top: 20px;
+}
+.footer {
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    margin-top: 20px;
+    color: rgb(216, 216, 216);
+    font-weight: 300;
+}
+.footer h5 {
+    font-size: 15px;
+}
+
+
+/* Desktop Mode */
+@media (min-width: 992px) {
+    .navbar {
+        text-transform: uppercase;
+    }
+    .banner img {
+        margin-top: -120px;
+        margin-left: 70px;
+    }
+    .footer {
+    margin-top: 450px;
+    }
+}
