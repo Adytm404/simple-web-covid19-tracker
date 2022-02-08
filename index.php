@@ -1,7 +1,6 @@
 <?php
 
-
-$data = file_get_contents('https://ogyaadytm.tech/covid/api/');                                                   
+$data = file_get_contents('https://if21.ft-umm.tech/tools/api/');                                                   
 $covid = json_decode($data);
 
 
@@ -10,14 +9,16 @@ $sembuh = $covid->sembuh;
 $meninggal = $covid->meninggal;
 
 
+$angka1 = $sembuh;
+$sembuh = number_format($angka1,0,"",",");
 
+$angka2 = $meninggal;
+$meninggal = number_format($angka2,0,"",",");
 
-
-
+$angka3 = $positif;
+$positif = number_format($angka3,0,"",",");
 
 ?>
-
-
 
 
 <html lang="en">
@@ -40,6 +41,7 @@ $meninggal = $covid->meninggal;
   <body>
  
     <!-- Navbar -->
+    
 
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
@@ -98,11 +100,11 @@ $meninggal = $covid->meninggal;
               <h4>Sembuh</h2>
               <p>Total: <?=$sembuh?></p>
             </div>
-            <div class="col-lg">
-              <img src="img/sad.png" alt="employee" class="float-left rounded-circle">
-              <h4>Positif</h2>
-              <p>Total: <?=$positif?></p>
-            </div>
+            <!--<div class="col-lg">-->
+            <!--  <img src="img/sad.png" alt="employee" class="float-left rounded-circle">-->
+            <!--  <h4>Positif</h2>-->
+            <!--  <p>Total: <?=$positif?></p>-->
+            <!--</div>-->
             <div class="col-lg">
                 <img src="img/nangis.png" alt="employee" class="float-left rounded-circle">
                 <h4>Meninggal</h2>
@@ -124,12 +126,6 @@ $meninggal = $covid->meninggal;
     </div>
     </div>
     <!-- End footer -->
-
-
-
-
-
-
 
 
     <!-- Optional JavaScript -->
